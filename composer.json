@@ -1,9 +1,9 @@
 {
-    "name": "yiiext/migrate-command",
+    "name": "mikspark/migrate-command",
     "description": "This is an enhanced version of the Yii Database Migration Tool that adds module support and many more usefull features.",
     "keywords": ["yii", "extension", "database-migration"],
     "homepage": "https://github.com/yiiext/migrate-command",
-    "type": "yii-extension",
+    "type": "yupe-extension",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -12,7 +12,6 @@
         }
     ],
     "require": {
-        "php": ">=5.1.0",
-        "yiisoft/yii": "1.1.*"
+        "marcj/topsort": "^1.0"
     }
 }
