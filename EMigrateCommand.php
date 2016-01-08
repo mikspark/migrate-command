@@ -381,7 +381,7 @@ class EMigrateCommand extends MigrateCommand
             echo 'Creating migration history table "' . $this->migrationTable . '"...';
             $db->createCommand()->createTable($this->migrationTable, array(
                 'id' => 'pk',
-                'version' => 'string NOT NULL PRIMARY KEY',
+                'version' => 'string NOT NULL',
                 'apply_time' => 'integer',
                 'module' => 'VARCHAR(32)',
             ));
