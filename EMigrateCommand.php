@@ -380,6 +380,7 @@ class EMigrateCommand extends MigrateCommand
         if ($db->schema->getTable($this->migrationTable) === null) {
             echo 'Creating migration history table "' . $this->migrationTable . '"...';
             $db->createCommand()->createTable($this->migrationTable, array(
+                'id' => 'pk',
                 'version' => 'string NOT NULL PRIMARY KEY',
                 'apply_time' => 'integer',
                 'module' => 'VARCHAR(32)',
